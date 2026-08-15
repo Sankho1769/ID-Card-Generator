@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: hh-goa-frame-generator
-    runtime: docker
-    plan: free
-    envVars:
-      - key: NODE_ENV
-        value: production
