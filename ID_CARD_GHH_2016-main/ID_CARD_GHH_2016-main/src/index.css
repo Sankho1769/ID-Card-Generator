@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --goa-green: #0B6839;
+    --goa-dark: #04321A;
+    --goa-deep: #032011;
+    --hh-yellow: #FEE101;
+    --hh-pink: #FF0080;
+    --cream: #FFFDF5;
+  }
+
+  body {
+    background-color: #032011;
+    color: #FFFDF5;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Custom Neo-Brutalist & Retro-Tropical Utilities */
+.neo-box {
+  background: #FFFDF5;
+  color: #121417;
+  border: 3px solid #000000;
+  box-shadow: 4px 4px 0px 0px #000000;
+}
+
+.neo-box-yellow {
+  background: #FEE101;
+  color: #000000;
+  border: 3px solid #000000;
+  box-shadow: 4px 4px 0px 0px #000000;
+}
+
+.neo-box-pink {
+  background: #FF0080;
+  color: #FFFFFF;
+  border: 3px solid #000000;
+  box-shadow: 4px 4px 0px 0px #000000;
+}
+
+.neo-box-green {
+  background: #084E2A;
+  color: #FFFDF5;
+  border: 3px solid #000000;
+  box-shadow: 5px 5px 0px 0px #000000;
+}
+
+.neo-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 3px solid #000000;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  cursor: pointer;
+}
+
+.neo-button:hover {
+  transform: translate(-2px, -2px) rotate(-0.5deg);
+  box-shadow: 6px 6px 0px 0px #000000;
+}
+
+.neo-button:active {
+  transform: translate(2px, 2px) rotate(0deg);
+  box-shadow: 2px 2px 0px 0px #000000;
+}
+
+.neo-button-yellow {
+  background: #FEE101;
+  color: #000000;
+  box-shadow: 4px 4px 0px 0px #000000;
+}
+
+.neo-button-yellow:hover {
+  background: #ffe833;
+}
+
+.neo-button-pink {
+  background: #FF0080;
+  color: #FFFFFF;
+  box-shadow: 4px 4px 0px 0px #000000;
+}
+
+.neo-button-pink:hover {
+  background: #ff1a8c;
+}
+
+.neo-button-cream {
+  background: #FFFDF5;
+  color: #000000;
+  box-shadow: 4px 4px 0px 0px #000000;
+}
+
+.neo-button-cream:hover {
+  background: #f0ebe0;
+}
+
+.neo-button-green {
+  background: #0B6839;
+  color: #FFFDF5;
+  box-shadow: 4px 4px 0px 0px #000000;
+}
+
+.neo-button-green:hover {
+  background: #0d7d45;
+}
+
+.washi-tape {
+  background: rgba(254, 225, 1, 0.9);
+  border: 1.5px dashed rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.washi-tape-pink {
+  background: rgba(255, 0, 128, 0.9);
+  border: 1.5px dashed rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #04321A;
+}
+::-webkit-scrollbar-thumb {
+  background: #0B6839;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FEE101;
+}
+
+/* Subtle Creative Studio Grid Overlay */
+.bg-grid-pattern {
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, rgba(154, 201, 95, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(154, 201, 95, 0.05) 1px, transparent 1px);
+}
